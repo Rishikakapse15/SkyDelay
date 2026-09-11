@@ -1,0 +1,99 @@
+{
+  "feature_cols": [
+    "Airline_enc",
+    "AirportFrom_enc",
+    "AirportTo_enc",
+    "Route_enc",
+    "DayOfWeek",
+    "Time",
+    "DepHour",
+    "TimeOfDay_enc",
+    "Length",
+    "avg_temp_c",
+    "avg_wind_knots",
+    "avg_turbulence",
+    "avg_visibility_km",
+    "has_weather_data"
+  ],
+  "cat_cols": [
+    "Airline",
+    "AirportFrom",
+    "AirportTo",
+    "Route",
+    "TimeOfDay"
+  ],
+  "metrics": {
+    "accuracy": 0.6633,
+    "precision": 0.6716,
+    "recall": 0.4776,
+    "f1": 0.5582,
+    "roc_auc": 0.7133
+  },
+  "weather_route_coverage_pct": 29.66,
+  "global_weather_avg": {
+    "avg_temp_c": 10.340134513688842,
+    "avg_wind_knots": 24.8386230120527,
+    "avg_turbulence": 2.005473106237264,
+    "avg_visibility_km": 10.503317899142113
+  },
+  "feature_importance": [
+    {
+      "feature": "Airline_enc",
+      "importance": 0.09631666666666668
+    },
+    {
+      "feature": "Time",
+      "importance": 0.034150000000000014
+    },
+    {
+      "feature": "Length",
+      "importance": 0.011650000000000013
+    },
+    {
+      "feature": "AirportFrom_enc",
+      "importance": 0.008716666666666706
+    },
+    {
+      "feature": "DayOfWeek",
+      "importance": 0.008350000000000005
+    },
+    {
+      "feature": "AirportTo_enc",
+      "importance": 0.0076333333333333435
+    },
+    {
+      "feature": "Route_enc",
+      "importance": 0.007050000000000038
+    },
+    {
+      "feature": "has_weather_data",
+      "importance": 0.0008833333333333471
+    },
+    {
+      "feature": "avg_wind_knots",
+      "importance": 0.0005500000000000135
+    },
+    {
+      "feature": "DepHour",
+      "importance": 0.0003833333333333651
+    },
+    {
+      "feature": "avg_visibility_km",
+      "importance": 0.0003833333333333651
+    },
+    {
+      "feature": "avg_temp_c",
+      "importance": 0.00018333333333335014
+    },
+    {
+      "feature": "avg_turbulence",
+      "importance": -0.0001666666666666853
+    },
+    {
+      "feature": "TimeOfDay_enc",
+      "importance": -0.0005333333333332746
+    }
+  ],
+  "n_train": 431506,
+  "n_test": 107877
+}
